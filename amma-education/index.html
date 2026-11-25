@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amma Education - Official DDU-GKY Training Institute in Guntupalli. 100% Free Skill Development Training, Free Food, Free Accommodation, Uniform, Study Materials, Government Certification & Job Placement Assistance.">
+  <meta name="keywords" content="Amma Education, DDU GKY, Free Skill Training, Guntupalli, Vijayawada, Andhra Pradesh, Free Food, Free Hostel, Communication Skills, Soft Skills, MS Office, IT Training, Government Certificate">
+  <meta name="author" content="Amma Education">
+  
+  <title>AMMA EDUCATION | DDU-GKY Free Skill Development Training Institute</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/ddu-gky-logo.png">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP NOTIFICATION & HELPLINE BAR
+       ========================================================================== -->
+  <div class="topbar">
+    <div class="container-fluid topbar-content">
+      <div class="topbar-left">
+        <span class="topbar-badge">
+          <span style="font-size: 0.9rem;">📢</span> Admissions Open
+        </span>
+        <span style="font-size: 0.82rem; color: #cbd5e1;">DDU-GKY 100% Free Residential Skill Training Program</span>
+        <a href="tel:9059930295" class="topbar-link">
+          <span>📞</span> Helpline: <strong>+91 9059930295 </strong>
+        </a>
+      </div>
+      <div class="topbar-right">
+        <button type="button" class="topbar-btn" onclick="openStatusModal()">
+          <span>🔍</span> Track Application
+        </button>
+        <a href="admin.html" class="topbar-btn" style="background: rgba(249, 115, 22, 0.25); border-color: #f97316;">
+          <span>🔒</span> Admin Portal
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAIN SITE HEADER (Dual Official Logos + Institute Branding)
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Left: Official DDU-GKY Logo & Institute Name -->
+      <div class="logo-block">
+        <a href="#home" title="DDU-GKY Amma Education">
+          <img src="assets/images/ddu-gky-logo.png" alt="Official DDU-GKY Logo" class="official-logo">
+        </a>
+        <div class="institute-branding">
+          <h1 class="institute-name">
+            AMMA <span class="highlight">EDUCATION</span>
+          </h1>
+          <div class="institute-tagline">
+            <span>DDU-GKY Training Institute</span>
+            <span style="color: #cbd5e1;">|</span>
+            <span style="color: #f97316;">Empowering Rural Youth</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Official Government Emblem -->
+      <div class="govt-logo-wrapper">
+        <div class="govt-text">
+          <div style="color: #002B49; font-weight: 800; font-size: 0.78rem;">GOVERNMENT OF INDIA</div>
+          <div style="color: #005691; font-size: 0.72rem;">&amp; GOVT. OF ANDHRA PRADESH</div>
+          <div style="color: #15803d; font-size: 0.68rem; font-weight: 700;">Ministry of Rural Development (MoRD)</div>
+        </div>
+        <img src="assets/images/govt-logo.png" alt="Official Government Emblem" class="govt-logo">
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN NAVIGATION BAR
+       ========================================================================== -->
+  <nav class="main-nav">
+    <div class="container-fluid nav-inner">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#courses" class="nav-link">Our Courses</a></li>
+        <li><a href="#facilities" class="nav-link">Free Facilities</a></li>
+        <li><a href="#certification" class="nav-link">Certification</a></li>
+        <li><a href="#placement" class="nav-link">Placement Assistance</a></li>
+        <li><a href="#registration" class="nav-link">Student Registration</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <button type="button" class="btn-nav-status" onclick="openStatusModal()">
+          Check Status
+        </button>
+        <a href="#registration" class="btn-nav-register">
+          <span>Apply Now</span>
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <h3 style="color:#ffffff; font-size: 1.2rem;">AMMA EDUCATION</h3>
+      <button type="button" class="mobile-drawer-close" style="background:transparent; border:none; color:#ffffff; font-size: 1.5rem; cursor:pointer;">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#home">🏠 Home</a>
+      <a href="#about">ℹ️ About Us</a>
+      <a href="#courses">📚 Our Courses</a>
+      <a href="#facilities">✨ Free Facilities</a>
+      <a href="#certification">📜 Government Certificate</a>
+      <a href="#placement">💼 Placement Assistance</a>
+      <a href="#registration">📝 Student Registration</a>
+      <a href="#contact">📍 Contact Us</a>
+      <a href="javascript:void(0)" onclick="openStatusModal()">🔍 Track Application Status</a>
+      <a href="admin.html" style="color: #fb923c;">🔒 Center Admin Portal</a>
+    </div>
+    <div style="margin-top: auto; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem; color: #94a3b8; font-size: 0.82rem;">
+      <p>Center In-charge: <strong>K.V.N Manikanta</strong></p>
+      <p>Helpline: <strong>9059930295</strong></p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 2: HOMEPAGE MAIN BANNER / HERO
+       ========================================================================== -->
+  <section id="home" class="hero-section">
+    <div class="container hero-grid">
+      <!-- Left Column: Compelling Pitch & CTAs -->
+      <div>
+        <div class="hero-badge-pill">
+          <span class="pill-dot"></span>
+          <span>Approved DDU-GKY Training Center | Guntupalli</span>
+        </div>
+
+        <h1 class="hero-title">
+          BUILD YOUR FUTURE WITH <span class="highlight-orange">AMMA EDUCATION!</span>
+        </h1>
+
+        <div class="hero-subheading">
+          <span>Free Skill Development Training</span>
+          <span class="bullet">•</span>
+          <span>Free Food</span>
+          <span class="bullet">•</span>
+          <span>Free Accommodation</span>
+          <span class="bullet">•</span>
+          <span>Free Study Materials</span>
+          <span class="bullet">•</span>
+          <span>Placement Assistance</span>
+        </div>
+
+        <p class="hero-desc">
+          Start your career journey with <strong>Amma Education</strong>. Improve your communication skills, develop professional confidence, learn computer applications, and gain practical IT knowledge through structured government-approved training programs.
+        </p>
+
+        <!-- Prominently Highlighted Benefits Grid -->
+        <div class="hero-benefits-grid">
+          <div class="benefit-item">
+            <span class="check-icon">✓</span> 100% Free Training for eligible students
+          </div>
+          <div class="benefit-item">
+            <span class="check-icon">✓</span> Free Nutritious Food &amp; Dining
+          </div>
+          <div class="benefit-item">
+            <span class="check-icon">✓</span> Free Safe Accommodation / Hostel
+          </div>
+          <div class="benefit-item">
+            <span class="check-icon">✓</span> Free Professional Uniform
+          </div>
+          <div class="benefit-item">
+            <span class="check-icon">✓</span> Free Study Books &amp; Materials
+          </div>
+          <div class="benefit-item">
+            <span class="check-icon">✓</span> Free Training Bag &amp; Cap
+          </div>
+          <div class="benefit-item">
+            <span class="check-icon">✓</span> Govt Approved Course Certificate
+          </div>
+          <div class="benefit-item">
+            <span class="check-icon">✓</span> Job Placement Assistance
+          </div>
+        </div>
+
+        <!-- Prominent Call to Action Buttons -->
+        <div class="hero-ctas">
+          <a href="#registration" class="btn-primary-hero">
+            <span>REGISTER NOW (100% FREE)</span>
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+          <button type="button" class="btn-secondary-hero" onclick="openStatusModal()">
+            <span>🔍 Check Application Status</span>
+          </button>
+          <a href="tel:9059930295" class="btn-secondary-hero" style="border-color: #22c55e; color: #86efac;">
+            <span>📞 Call Center: 9059930295</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Official Visual Hero Card -->
+      <div class="hero-media-wrapper">
+        <div class="hero-image-card">
+          <img src="assets/images/ddu-gky-banner.jpg" alt="DDU-GKY Skill Training for Rural Youth" class="hero-main-img">
+          
+          <div class="hero-floating-badge">
+            <div class="floating-badge-text">
+              <h4>Skill Training for Rural Youth</h4>
+              <p>Learn a Skill • Get a Job • Get Lifelong Support</p>
+            </div>
+            <div class="floating-badge-icon">
+              🎓
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VALUE STRIP: KEY 100% FREE BENEFITS AT A GLANCE
+       ========================================================================== -->
+  <div class="value-strip">
+    <div class="container value-strip-grid">
+      <div class="value-strip-card">
+        <div class="value-strip-icon free-train">🎓</div>
+        <div class="value-strip-title">100% Free Training</div>
+        <div class="value-strip-sub">Zero Course Fees</div>
+      </div>
+      <div class="value-strip-card">
+        <div class="value-strip-icon free-food">🍲</div>
+        <div class="value-strip-title">Free Food</div>
+        <div class="value-strip-sub">Daily Nutritious Meals</div>
+      </div>
+      <div class="value-strip-card">
+        <div class="value-strip-icon free-stay">🏢</div>
+        <div class="value-strip-title">Free Accommodation</div>
+        <div class="value-strip-sub">Clean Hostel Facility</div>
+      </div>
+      <div class="value-strip-card">
+        <div class="value-strip-icon free-dress">👔</div>
+        <div class="value-strip-title">Free Uniform</div>
+        <div class="value-strip-sub">Institute Dress Code</div>
+      </div>
+      <div class="value-strip-card">
+        <div class="value-strip-icon free-books">📚</div>
+        <div class="value-strip-title">Free Study Materials</div>
+        <div class="value-strip-sub">Books &amp; Guides</div>
+      </div>
+      <div class="value-strip-card">
+        <div class="value-strip-icon free-cert">📜</div>
+        <div class="value-strip-title">Govt Certificate</div>
+        <div class="value-strip-sub">Valid Across India</div>
+      </div>
+      <div class="value-strip-card">
+        <div class="value-strip-icon free-job">💼</div>
+        <div class="value-strip-title">Placement Support</div>
+        <div class="value-strip-sub">Interviews &amp; Guidance</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 3: ABOUT AMMA EDUCATION
+       ========================================================================== -->
+  <section id="about" class="section section-tinted">
+    <div class="container about-grid">
+      <!-- Left: About Information -->
+      <div class="about-text-col">
+        <span class="section-tag">About Our Institute</span>
+        <h3>Dedicated to Empowering Youth Through Practical Vocational Skills</h3>
+        
+        <p class="about-lead">
+          <strong>Amma Education</strong> is dedicated to providing quality skill development and vocational training opportunities to students from rural and semi-urban communities under the flagship <strong>Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY)</strong>.
+        </p>
+
+        <p style="color: var(--text-medium); margin-bottom: 1.25rem;">
+          Our mission is to help students improve their communication skills, soft skills, computer knowledge, and technical abilities to prepare them thoroughly for professional careers in modern industries.
+        </p>
+
+        <p style="color: var(--text-medium); margin-bottom: 1.5rem;">
+          We aim to create a supportive learning environment where students can learn new skills without worrying about training expenses, accommodation, or food. We also support students with career guidance, interview preparation, and placement assistance after successful completion of their training.
+        </p>
+
+        <!-- Feature Points -->
+        <div class="about-features">
+          <div class="about-feat-item">
+            <div class="feat-icon-box">🌟</div>
+            <div class="feat-content">
+              <h4>Supportive, Worry-Free Learning Environment</h4>
+              <p>Students focus purely on learning, fully relieved of financial pressure regarding fees, boarding, or lodging.</p>
+            </div>
+          </div>
+
+          <div class="about-feat-item">
+            <div class="feat-icon-box">💻</div>
+            <div class="feat-content">
+              <h4>Modern Practical Lab Infrastructure</h4>
+              <p>Hands-on computer systems, high-speed internet, projector classrooms, and interactive speaking labs.</p>
+            </div>
+          </div>
+
+          <div class="about-feat-item">
+            <div class="feat-icon-box">🎯</div>
+            <div class="feat-content">
+              <h4>Comprehensive Career Guidance &amp; Grooming</h4>
+              <p>Dedicated personality development, resume building, mock interviews, and corporate connections.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center In-charge Profile Card -->
+        <div class="incharge-card">
+          <div class="incharge-avatar">M</div>
+          <div class="incharge-info">
+            <h4>K.V.N Manikanta</h4>
+            <div class="incharge-role">Center In-Charge • Amma Education</div>
+            <p style="font-size: 0.85rem; color: #475569; margin-bottom: 0.5rem;">
+              "Our primary commitment is transforming motivated rural youth into confident, certified, and employable professionals."
+            </p>
+            <div class="incharge-contact">
+              <a href="tel:9059930295" style="color: #16a34a; font-weight: 700;">📞 9059930295</a>
+              <span>•</span>
+              <a href="mailto:aes.guntupalli@gmail.com" style="color: #005691; font-weight: 600;">✉️ aes.guntupalli@gmail.com</a>
+              <a href="ammaeducationvij@gmail.com" style="color: #005691; font-weight: 600;">✉️ ammaeducationvij@gmail.com</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Key Highlights & Stats Visual -->
+      <div>
+        <div class="about-visual-card">
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <span style="font-size: 0.78rem; font-weight: 800; color: #f97316; letter-spacing: 1px; text-transform: uppercase;">Key Institute Milestones</span>
+            <h4 style="font-size: 1.45rem; color: #002B49; margin-top: 0.25rem;">Transforming Lives Through Skill Training</h4>
+          </div>
+
+          <div class="about-stats-grid">
+            <div class="stat-box">
+              <div class="stat-number saffron">100%</div>
+              <div class="stat-label">Free Training, Food &amp; Hostel</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number blue">Govt</div>
+              <div class="stat-label">DDU-GKY Approved Scheme</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number green">100+</div>
+              <div class="stat-label">Mock Interviews &amp; Placement Support</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">4+</div>
+              <div class="stat-label">In-Demand Skill Tracks</div>
+            </div>
+          </div>
+
+          <div style="background: #eff6ff; border-radius: 12px; padding: 1.25rem; margin-top: 1.5rem; border: 1px solid #bfdbfe; text-align: center;">
+            <p style="font-size: 0.9rem; color: #1e40af; font-weight: 700; margin-bottom: 0.25rem;">
+              📍 Center Location: Guntupalli, Near Vijayawada, AP
+            </p>
+            <p style="font-size: 0.8rem; color: #3b82f6;">
+              Easily accessible by RTC bus and train transport from Krishna, NTR, Guntur, and adjacent districts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: OUR TRAINING PROGRAMS AND COURSES
+       ========================================================================== -->
+  <section id="courses" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Structured Curriculum</span>
+        <h2 class="section-title">Our Training Programs &amp; Courses</h2>
+        <p class="section-subtitle">
+          Industry-aligned, practical vocational training curricula designed to prepare students for real-world job roles and corporate placement.
+        </p>
+      </div>
+
+      <div class="courses-grid">
+        <!-- Course A: Communication Skills Training -->
+        <div class="course-card comm">
+          <div class="course-card-header">
+            <span class="course-badge">Track A • Fluency</span>
+            <div class="course-icon-holder">🗣️</div>
+            <h3 class="course-title">Communication Skills Training</h3>
+            <p class="course-desc">Master fluent spoken English, professional phonetics, self-presentation, and workplace conversation.</p>
+          </div>
+          <div class="course-card-body">
+            <div class="syllabus-title">Key Modules Covered:</div>
+            <ul class="curriculum-list">
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Spoken English Mastery</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> English Communication at Work</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Public Speaking &amp; Stage Confidence</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Interview Communication Practice</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Professional Email &amp; Chat Etiquette</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Personality Development</li>
+            </ul>
+          </div>
+          <div class="course-card-footer">
+            <span class="course-fee-tag">100% FREE</span>
+            <button type="button" class="btn-course-enroll" onclick="openCourseModal('comm')">
+              View Syllabus ➔
+            </button>
+          </div>
+        </div>
+
+        <!-- Course B: Soft Skills Training -->
+        <div class="course-card soft">
+          <div class="course-card-header">
+            <span class="course-badge">Track B • Leadership</span>
+            <div class="course-icon-holder">🤝</div>
+            <h3 class="course-title">Soft Skills Training</h3>
+            <p class="course-desc">Cultivate teamwork, time discipline, emotional intelligence, and executive workplace demeanor.</p>
+          </div>
+          <div class="course-card-body">
+            <div class="syllabus-title">Key Modules Covered:</div>
+            <ul class="curriculum-list">
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Leadership Skills &amp; Initiative</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Teamwork &amp; Collaboration</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Time Management &amp; Priorities</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Professional Behaviour &amp; Ethics</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Interview Preparation &amp; Mock Drills</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Confidence Building &amp; Poise</li>
+            </ul>
+          </div>
+          <div class="course-card-footer">
+            <span class="course-fee-tag">100% FREE</span>
+            <button type="button" class="btn-course-enroll" onclick="openCourseModal('soft')">
+              View Syllabus ➔
+            </button>
+          </div>
+        </div>
+
+        <!-- Course C: Computer Knowledge & MS Office -->
+        <div class="course-card msoffice">
+          <div class="course-card-header">
+            <span class="course-badge">Track C • Digital Office</span>
+            <div class="course-icon-holder">📊</div>
+            <h3 class="course-title">MS Office &amp; Computer Operations</h3>
+            <p class="course-desc">Comprehensive hands-on training on Microsoft Word, Excel, PowerPoint, and online office tools.</p>
+          </div>
+          <div class="course-card-body">
+            <div class="syllabus-title">Key Modules Covered:</div>
+            <ul class="curriculum-list">
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Basic Computer Fundamentals</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Microsoft Office Full Suite</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> MS Word (Documentation &amp; Reports)</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> MS Excel (Formulas &amp; Data Entry)</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> MS PowerPoint (Slide Presentations)</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Internet, Web &amp; Email Operations</li>
+            </ul>
+          </div>
+          <div class="course-card-footer">
+            <span class="course-fee-tag">100% FREE</span>
+            <button type="button" class="btn-course-enroll" onclick="openCourseModal('msoffice')">
+              View Syllabus ➔
+            </button>
+          </div>
+        </div>
+
+        <!-- Course D: IT Training -->
+        <div class="course-card it">
+          <div class="course-card-header">
+            <span class="course-badge">Track D • Technical</span>
+            <div class="course-icon-holder">💻</div>
+            <h3 class="course-title">IT Training (Hardware &amp; Systems)</h3>
+            <p class="course-desc">Practical IT foundation covering hardware basics, troubleshooting, networking, and technical roles.</p>
+          </div>
+          <div class="course-card-body">
+            <div class="syllabus-title">Key Modules Covered:</div>
+            <ul class="curriculum-list">
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Basic IT Knowledge &amp; Concepts</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> IT Fundamentals &amp; Architecture</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Computer Hardware &amp; Assembly</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Software Setup &amp; Diagnostics</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Practical Computer Lab Training</li>
+              <li class="curriculum-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Introduction to IT Helpdesk Careers</li>
+            </ul>
+          </div>
+          <div class="course-card-footer">
+            <span class="course-fee-tag">100% FREE</span>
+            <button type="button" class="btn-course-enroll" onclick="openCourseModal('it')">
+              View Syllabus ➔
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: FREE FACILITIES PROVIDED TO STUDENTS
+       ========================================================================== -->
+  <section id="facilities" class="section section-tinted">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">All-Inclusive Student Kit &amp; Amenities</span>
+        <h2 class="section-title">Free Facilities Provided to Students</h2>
+        <p class="section-subtitle">
+          At Amma Education, every eligible enrolled student is provided with comprehensive facilities completely free of cost during the entire training duration.
+        </p>
+      </div>
+
+      <div class="facilities-grid">
+        <!-- 1. Free Training -->
+        <div class="facility-card">
+          <span class="facility-num">01</span>
+          <div class="facility-icon-wrap f-train">🎓</div>
+          <h3>1. Free Training</h3>
+          <p>No training or tuition fees whatsoever for eligible students. Complete vocational and technical curriculum delivered by certified trainers.</p>
+          <span class="facility-pill">Zero Course Charges</span>
+        </div>
+
+        <!-- 2. Free Food -->
+        <div class="facility-card">
+          <span class="facility-num">02</span>
+          <div class="facility-icon-wrap f-food">🍲</div>
+          <h3>2. Free Food</h3>
+          <p>Hygienic and healthy breakfast, lunch, and dinner provided daily in our center dining facility throughout the entire training program period.</p>
+          <span class="facility-pill">Daily Nutritious Meals</span>
+        </div>
+
+        <!-- 3. Free Accommodation -->
+        <div class="facility-card">
+          <span class="facility-num">03</span>
+          <div class="facility-icon-wrap f-stay">🏢</div>
+          <h3>3. Free Accommodation</h3>
+          <p>Safe, clean, secure room and hostel accommodation facilities provided for enrolled outstation candidates with 24/7 security.</p>
+          <span class="facility-pill">Dedicated Residential Hostel</span>
+        </div>
+
+        <!-- 4. Free Uniform -->
+        <div class="facility-card">
+          <span class="facility-num">04</span>
+          <div class="facility-icon-wrap f-dress">👔</div>
+          <h3>4. Free Uniform</h3>
+          <p>Professional institute uniform provided to all enrolled students to promote unity, workplace discipline, and corporate grooming.</p>
+          <span class="facility-pill">Student Dress Provided</span>
+        </div>
+
+        <!-- 5. Free Study Materials -->
+        <div class="facility-card">
+          <span class="facility-num">05</span>
+          <div class="facility-icon-wrap f-books">📖</div>
+          <h3>5. Free Study Materials</h3>
+          <p>All required textbooks, workbooks, grammar guides, practical manual handouts, and learning resources provided at zero cost.</p>
+          <span class="facility-pill">Complete Course Books</span>
+        </div>
+
+        <!-- 6. Free Bag -->
+        <div class="facility-card">
+          <span class="facility-num">06</span>
+          <div class="facility-icon-wrap f-bag">🎒</div>
+          <h3>6. Free Training Bag</h3>
+          <p>Durable student training backpack provided to keep your study materials, notebooks, and supplies organized throughout the program.</p>
+          <span class="facility-pill">Durable Student Kit Bag</span>
+        </div>
+
+        <!-- 7. Free Cap -->
+        <div class="facility-card">
+          <span class="facility-num">07</span>
+          <div class="facility-icon-wrap f-cap">🧢</div>
+          <h3>7. Free Student Cap</h3>
+          <p>Official DDU-GKY branded student cap provided as part of the student starter kit during orientation and outdoor group activities.</p>
+          <span class="facility-pill">Part of Student Kit</span>
+        </div>
+      </div>
+
+      <!-- Facility Callout Banner -->
+      <div class="facility-banner">
+        <div class="facility-banner-text">
+          <h3>Ready to Start Your Career With Zero Financial Burden?</h3>
+          <p>Admissions for the upcoming 2026 batch at our Guntupalli center are filling fast. Register online today!</p>
+        </div>
+        <a href="#registration" class="btn-primary-hero" style="font-size: 0.95rem; padding: 0.75rem 1.75rem;">
+          Register Now for Free Facilities ➔
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: GOVERNMENT COURSE COMPLETION CERTIFICATION
+       ========================================================================== -->
+  <section id="certification" class="section section-blue">
+    <div class="container cert-showcase-grid">
+      <!-- Left: Certification Details -->
+      <div class="cert-info-col">
+        <span class="section-tag light">Official Accreditation</span>
+        <h3>LEARN SKILLS – EARN YOUR CERTIFICATE!</h3>
+
+        <p class="cert-desc">
+          Students who successfully complete the training program and satisfy the applicable assessment and eligibility requirements will receive the relevant <strong>course completion certificate under the approved government training scheme</strong>.
+        </p>
+
+        <div class="cert-points">
+          <div class="cert-point-item">
+            <span class="cert-point-icon">📜</span>
+            <p><strong>Nationally Recognized:</strong> The certificate validates your skills under approved government skill development norms, recognized by recruiters across India.</p>
+          </div>
+          <div class="cert-point-item">
+            <span class="cert-point-icon">🏆</span>
+            <p><strong>Competitive Advantage:</strong> Give your resume strong credibility when applying for corporate jobs, IT roles, and customer service positions.</p>
+          </div>
+          <div class="cert-point-item">
+            <span class="cert-point-icon">🛡️</span>
+            <p><strong>Assessment-Backed:</strong> Awarded after continuous practical evaluation, computer lab assessments, and viva voce to guarantee true competence.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#registration" class="btn-primary-hero" style="font-size: 0.95rem;">
+            Enroll &amp; Earn Your Certificate
+          </a>
+          <button type="button" class="btn-secondary-hero" onclick="openStatusModal()">
+            Verify Student Status
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Certificate Mockup Card -->
+      <div class="cert-mockup-wrapper">
+        <div class="cert-card-mockup">
+          <div class="cert-mock-header">
+            <div class="cert-mock-logos">
+              <img src="assets/images/ddu-gky-logo.png" alt="DDU-GKY">
+              <img src="assets/images/govt-logo.png" alt="Govt Emblem">
+            </div>
+            <h4>DEEN DAYAL UPADHYAYA GRAMEEN KAUSHALYA YOJANA</h4>
+            <p>Ministry of Rural Development • Government of India</p>
+          </div>
+
+          <div class="cert-mock-body">
+            <div class="cert-mock-title">Certificate of Course Completion</div>
+            <p style="font-size: 0.75rem; color: #64748b; margin-bottom: 0.5rem;">This is to certify that</p>
+            <div class="cert-mock-student-name">STUDENT CANDIDATE NAME</div>
+            <p class="cert-mock-text">
+              has successfully undergone and completed the prescribed skill development course in <strong>Computer Knowledge, Communication Skills &amp; IT Training</strong> conducted at <strong>AMMA EDUCATION TRAINING CENTER</strong>, satisfying all assessment benchmarks.
+            </p>
+          </div>
+
+          <div class="cert-mock-footer">
+            <div class="cert-seal">
+              OFFICIAL<br>GOVT<br>SCHEME
+            </div>
+            <div class="cert-sig">
+              <div style="border-bottom: 1px solid #94a3b8; width: 120px; margin-bottom: 2px;"></div>
+              Center In-Charge<br>Amma Education
+            </div>
+            <div class="cert-sig">
+              <div style="border-bottom: 1px solid #94a3b8; width: 120px; margin-bottom: 2px;"></div>
+              Authorized Signatory<br>DDU-GKY Program
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: JOB PLACEMENT ASSISTANCE
+       ========================================================================== -->
+  <section id="placement" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career Pathway</span>
+        <h2 class="section-title">COMPLETE YOUR TRAINING – START YOUR CAREER!</h2>
+        <p class="section-subtitle">
+          Amma Education aims to support students not only during training but also throughout their journey towards meaningful employment.
+        </p>
+      </div>
+
+      <!-- Slogan Callout -->
+      <div class="placement-banner-cta">
+        <h3>TRAIN TODAY – BUILD YOUR CAREER TOMORROW!</h3>
+      </div>
+
+      <!-- Placement Support Services Grid -->
+      <div class="placement-steps-grid">
+        <!-- 1. Job Placement Assistance -->
+        <div class="placement-card">
+          <div class="placement-icon-box">🎯</div>
+          <div class="placement-content">
+            <h4>Job Placement Assistance</h4>
+            <p>Dedicated post-course placement facilitation, coordinating between students and corporate hiring partners.</p>
+          </div>
+        </div>
+
+        <!-- 2. Resume Preparation -->
+        <div class="placement-card">
+          <div class="placement-icon-box">📄</div>
+          <div class="placement-content">
+            <h4>Resume Preparation</h4>
+            <p>Professional curriculum vitae drafting emphasizing skills, projects, practical lab hours, and strengths.</p>
+          </div>
+        </div>
+
+        <!-- 3. Interview Preparation -->
+        <div class="placement-card">
+          <div class="placement-icon-box">💡</div>
+          <div class="placement-content">
+            <h4>Interview Preparation</h4>
+            <p>Detailed coaching on answering common HR questions, technical fundamentals, and body language.</p>
+          </div>
+        </div>
+
+        <!-- 4. Mock Interviews -->
+        <div class="placement-card">
+          <div class="placement-icon-box">🎙️</div>
+          <div class="placement-content">
+            <h4>Mock Interviews</h4>
+            <p>One-on-one simulated interview sessions with constructive feedback to eliminate hesitation and stage fright.</p>
+          </div>
+        </div>
+
+        <!-- 5. Communication & Soft Skills -->
+        <div class="placement-card">
+          <div class="placement-icon-box">🗣️</div>
+          <div class="placement-content">
+            <h4>Communication &amp; Soft Skills</h4>
+            <p>Extensive practice in telephone etiquette, customer service dialogue, and professional confidence building.</p>
+          </div>
+        </div>
+
+        <!-- 6. Career Guidance -->
+        <div class="placement-card">
+          <div class="placement-icon-box">🧭</div>
+          <div class="placement-content">
+            <h4>Career Guidance</h4>
+            <p>Personalized counseling to help candidates identify suitable industries, roles, and future growth paths.</p>
+          </div>
+        </div>
+
+        <!-- 7. Employer Connect -->
+        <div class="placement-card">
+          <div class="placement-icon-box">🤝</div>
+          <div class="placement-content">
+            <h4>Support in Connecting with Employers</h4>
+            <p>Organizing campus drives, direct employer interviews, and job alerts across regional and national hubs.</p>
+          </div>
+        </div>
+
+        <!-- 8. Job Opportunities Guidance -->
+        <div class="placement-card">
+          <div class="placement-icon-box">📈</div>
+          <div class="placement-content">
+            <h4>Guidance on Relevant Opportunities</h4>
+            <p>Ongoing support tracking verified openings in IT/ITeS, office operations, banking, logistics, and retail.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hiring Sectors Card -->
+      <div class="hiring-sectors-box">
+        <h4>Target Industry Sectors for Amma Education Graduates</h4>
+        <div class="sectors-tags">
+          <span class="sector-tag">💻 IT / ITES &amp; Helpdesk Support</span>
+          <span class="sector-tag">📞 Customer Service &amp; BPO</span>
+          <span class="sector-tag">📊 Back-Office &amp; Data Entry Operations</span>
+          <span class="sector-tag">🏦 Banking &amp; Financial Services</span>
+          <span class="sector-tag">🛍️ Retail &amp; Store Management</span>
+          <span class="sector-tag">🚚 Logistics &amp; Supply Chain Desk</span>
+          <span class="sector-tag">📑 Administrative &amp; Documentation Office</span>
+        </div>
+        <p style="font-size: 0.78rem; color: #64748b; margin-top: 1rem;">
+          *Placement assistance is actively provided to all eligible candidates who successfully complete the training curriculum, maintain 80%+ attendance, and pass the final evaluation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 8: STUDENT ONLINE REGISTRATION FORM
+       ========================================================================== -->
+  <section id="registration" class="section section-tinted">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Online Admission 2026</span>
+        <h2 class="section-title">Student Online Registration Form</h2>
+        <p class="section-subtitle">
+          Apply online directly for 100% Free Skill Development Training, Free Food, and Free Accommodation at Amma Education DDU-GKY Training Center.
+        </p>
+      </div>
+
+      <div class="registration-container">
+        <div class="registration-form-header">
+          <h3>Apply for Free Training</h3>
+          <p>Please provide accurate details as per your educational certificates and Aadhaar card.</p>
+        </div>
+
+        <form id="studentRegistrationForm" class="reg-form-body" novalidate>
+          <!-- Section A: Student Personal Information -->
+          <div class="form-section-title">
+            <span>👤</span> Personal Information
+          </div>
+
+          <div class="form-grid-3">
+            <div class="form-group">
+              <label class="form-label" for="fullName">1. Student Full Name <span class="req">*</span></label>
+              <input type="text" id="fullName" name="fullName" class="form-input" placeholder="As per SSC / Aadhaar" required>
+              <span class="field-error">Please enter your full name</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="fatherName">2. Father's Name <span class="req">*</span></label>
+              <input type="text" id="fatherName" name="fatherName" class="form-input" placeholder="Father's full name" required>
+              <span class="field-error">Please enter father's name</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="motherName">3. Mother's Name <span class="req">*</span></label>
+              <input type="text" id="motherName" name="motherName" class="form-input" placeholder="Mother's full name" required>
+              <span class="field-error">Please enter mother's name</span>
+            </div>
+          </div>
+
+          <div class="form-grid-3" style="margin-top: 1rem;">
+            <div class="form-group">
+              <label class="form-label" for="dob">4. Date of Birth <span class="req">*</span></label>
+              <input type="date" id="dob" name="dob" class="form-input" required>
+              <span class="field-error">Please select your date of birth</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="gender">5. Gender <span class="req">*</span></label>
+              <select id="gender" name="gender" class="form-select" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="field-error">Please select gender</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="mobile">6. Mobile Number <span class="req">*</span></label>
+              <input type="tel" id="mobile" name="mobile" class="form-input" placeholder="10-digit Mobile Number" maxlength="10" required>
+              <span class="field-error">Valid 10-digit mobile required</span>
+            </div>
+          </div>
+
+          <div class="form-grid-2" style="margin-top: 1rem;">
+            <div class="form-group">
+              <label class="form-label" for="whatsapp">7. WhatsApp Number</label>
+              <input type="tel" id="whatsapp" name="whatsapp" class="form-input" placeholder="WhatsApp contact number" maxlength="10">
+              <small style="font-size:0.75rem; color:#64748b;">Leave blank if same as mobile number</small>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">8. Email Address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="example@gmail.com" required>
+              <span class="field-error">Please enter a valid email address</span>
+            </div>
+          </div>
+
+          <!-- Section B: Residential Address -->
+          <div class="form-section-title">
+            <span>🏠</span> Complete Residential Address
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="address">9. Complete Residential Address <span class="req">*</span></label>
+            <input type="text" id="address" name="address" class="form-input" placeholder="House/Door No, Street Name, Landmark" required>
+            <span class="field-error">Please enter your house and street address</span>
+          </div>
+
+          <div class="form-grid-4" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+            <div class="form-group">
+              <label class="form-label" for="village">10. Village / Town <span class="req">*</span></label>
+              <input type="text" id="village" name="village" class="form-input" placeholder="Village / Town" required>
+              <span class="field-error">Village/Town is required</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="district">11. District <span class="req">*</span></label>
+              <select id="district" name="district" class="form-select" required>
+                <option value="">Select District</option>
+                <option value="NTR District">NTR District</option>
+                <option value="Krishna">Krishna</option>
+                <option value="Guntur">Guntur</option>
+                <option value="Eluru">Eluru</option>
+                <option value="West Godavari">West Godavari</option>
+                <option value="East Godavari">East Godavari</option>
+                <option value="Prakasam">Prakasam</option>
+                <option value="Palnadu">Palnadu</option>
+                <option value="Bapatla">Bapatla</option>
+                <option value="Other AP District">Other AP District</option>
+                <option value="Other State">Other State</option>
+              </select>
+              <span class="field-error">Please select district</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="state">12. State <span class="req">*</span></label>
+              <input type="text" id="state" name="state" class="form-input" value="Andhra Pradesh" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="pincode">13. PIN Code <span class="req">*</span></label>
+              <input type="text" id="pincode" name="pincode" class="form-input" placeholder="6-digit PIN" maxlength="6" required>
+              <span class="field-error">6-digit PIN code required</span>
+            </div>
+          </div>
+
+          <!-- Section C: Educational Information -->
+          <div class="form-section-title">
+            <span>🎓</span> Educational Information &amp; Course Selection
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="qualification">14. Highest Educational Qualification <span class="req">*</span></label>
+              <select id="qualification" name="qualification" class="form-select" required>
+                <option value="">Select Qualification</option>
+                <option value="10th Class (SSC)">10th Class (SSC)</option>
+                <option value="Intermediate (10+2)">Intermediate (10+2)</option>
+                <option value="Diploma / ITI">Diploma / ITI</option>
+                <option value="Degree / Graduation (B.A / B.Com / B.Sc / BCA)">Degree / Graduation</option>
+                <option value="B.Tech / Engineering">B.Tech / Engineering</option>
+                <option value="Post Graduation (PG)">Post Graduation (PG)</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="field-error">Please select highest qualification</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="computerKnowledge">15. Previous Computer Knowledge <span class="req">*</span></label>
+              <select id="computerKnowledge" name="computerKnowledge" class="form-select" required>
+                <option value="">Select Computer Experience</option>
+                <option value="None (Beginner / Fresher)">None (Beginner / Fresher)</option>
+                <option value="Basic (Typing, Internet browsing)">Basic (Typing, Internet)</option>
+                <option value="Intermediate (MS Word, Excel basics)">Intermediate (MS Word, Excel basics)</option>
+                <option value="Advanced (Software / Hardware experience)">Advanced</option>
+              </select>
+              <span class="field-error">Please select computer knowledge level</span>
+            </div>
+          </div>
+
+          <div class="form-grid-2" style="margin-top: 1rem;">
+            <div class="form-group">
+              <label class="form-label" for="interestedCourse">16. Interested Training Course <span class="req">*</span></label>
+              <select id="interestedCourse" name="course" class="form-select" required>
+                <option value="">Select Course</option>
+                <option value="Communication Skills Training">Communication Skills Training</option>
+                <option value="Soft Skills Training">Soft Skills Training</option>
+                <option value="Computer Knowledge and MS Office Training">Computer Knowledge and MS Office Training</option>
+                <option value="MS Word &amp; Documentation">MS Word Specialization</option>
+                <option value="MS Excel &amp; Spreadsheet Analysis">MS Excel Specialization</option>
+                <option value="MS PowerPoint &amp; Presentation">MS PowerPoint Specialization</option>
+                <option value="IT Training">IT Training (Hardware &amp; Technical)</option>
+                <option value="Integrated All-In-One Skill Development">Integrated All-In-One Skill Development</option>
+              </select>
+              <span class="field-error">Please choose a course</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="experience">17. Previous Work Experience (if any)</label>
+              <input type="text" id="experience" name="experience" class="form-input" placeholder="e.g. Fresher or 6 months shop assistant">
+            </div>
+          </div>
+
+          <!-- Section D: Facility Requirements -->
+          <div class="form-section-title">
+            <span>🏢</span> Facility Requirements (100% Free of Cost)
+          </div>
+
+          <div class="facility-options-grid">
+            <div class="form-group">
+              <label class="form-label">18. Do you require free accommodation? <span class="req">*</span></label>
+              <div class="radio-card-group">
+                <label class="radio-pill">
+                  <input type="radio" name="accommodation" value="Yes" checked>
+                  <span>Yes, I need Hostel</span>
+                </label>
+                <label class="radio-pill">
+                  <input type="radio" name="accommodation" value="No">
+                  <span>No, Day Scholar</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">19. Do you require free food facilities? <span class="req">*</span></label>
+              <div class="radio-card-group">
+                <label class="radio-pill">
+                  <input type="radio" name="food" value="Yes" checked>
+                  <span>Yes, Daily Meals</span>
+                </label>
+                <label class="radio-pill">
+                  <input type="radio" name="food" value="No">
+                  <span>No</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section E: Uploads & Declaration -->
+          <div class="form-section-title">
+            <span>📷</span> Student Photograph &amp; Verification Documents
+          </div>
+
+          <div class="form-grid-2">
+            <div>
+              <label class="form-label">20. Student Photograph (Optional Upload)</label>
+              <label class="upload-dropzone" for="studentPhoto">
+                <div class="upload-icon">📷</div>
+                <div class="upload-prompt">Click to browse or upload passport photo</div>
+                <div class="upload-sub">Supports JPG, PNG (Max 3MB)</div>
+                <input type="file" id="studentPhoto" accept="image/*" style="display:none;">
+              </label>
+              <div class="photo-preview-box" id="photoPreview">
+                <img id="photoPreviewImg" src="#" alt="Student Preview">
+              </div>
+            </div>
+
+            <div>
+              <label class="form-label">21. Identity Document Upload (Optional)</label>
+              <label class="upload-dropzone" for="studentIdDoc">
+                <div class="upload-icon">📄</div>
+                <div class="upload-prompt">Upload Aadhaar / Educational Marksheet</div>
+                <div class="upload-sub">PDF or Image (Optional during registration)</div>
+                <input type="file" id="studentIdDoc" accept=".pdf,image/*" style="display:none;">
+              </label>
+              <small style="display:block; margin-top: 0.5rem; color:#64748b; font-size:0.75rem;">
+                *You can also submit physical photocopies during center verification.
+              </small>
+            </div>
+          </div>
+
+          <!-- 22. Declaration and Consent -->
+          <div class="declaration-box">
+            <label class="checkbox-custom">
+              <input type="checkbox" id="consentCheckbox" required checked>
+              <span>
+                <strong>22. Declaration &amp; Consent:</strong> I hereby declare that all information provided above is true and complete to the best of my knowledge. I understand that the skill training, food, accommodation, uniform, and materials are provided free of cost under the applicable government training scheme, and I commit to attending classes diligently.
+              </span>
+            </label>
+          </div>
+
+          <!-- Submit Buttons -->
+          <div class="form-submit-actions">
+            <button type="submit" class="btn-submit-reg">
+              <span>SUBMIT REGISTRATION</span>
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </button>
+
+            <div class="reg-note">
+              <span>🔒</span> Instant Application Reference Number Generated Upon Submission
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 9: CONTACT INFORMATION
+       ========================================================================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Reach Us</span>
+        <h2 class="section-title">Contact Amma Education Training Center</h2>
+        <p class="section-subtitle">
+          Have questions regarding eligibility, hostel accommodation, or the registration process? Get in touch with our center team directly.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Card -->
+        <div class="contact-card">
+          <h3 style="font-size: 1.4rem; color: #002B49; margin-bottom: 1.25rem;">Center In-Charge Contact Details</h3>
+
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🏛️</div>
+              <div class="contact-info-detail">
+                <h4>Institute Name</h4>
+                <p>AMMA EDUCATION (DDU-GKY Training Center)</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon phone">👤</div>
+              <div class="contact-info-detail">
+                <h4>Center In-Charge</h4>
+                <p>K.V.N Manikanta</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon phone">📞</div>
+              <div class="contact-info-detail">
+                <h4>Mobile Number (Click to Call)</h4>
+                <p><a href="tel:9059930295">+91 9059930295</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon email">✉️</div>
+              <div class="contact-info-detail">
+                <h4>Official Email Address</h4>
+                <p><a href="mailto:aes.guntupalli@gmail.com">aes.guntupalli@gmail.com</a></p>
+                <p><a href="mailto:ammaeducationvij@gmail.com">ammaeducationvij@gmail.com</a></p>
+
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon loc">📍</div>
+              <div class="contact-info-detail">
+                <h4>Center Address</h4>
+                <p>DDU-GKY Training Center, Guntupalli, Near Vijayawada, NTR District, Andhra Pradesh - 521241</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="quick-call-buttons">
+            <a href="tel:9059930295" class="btn-quick-call">
+              <span>📞</span> Call 9059930295
+            </a>
+            <a href="https://wa.me/9059930295?text=Hello%20K.V.N Manikanta%20Sir,%20I%20am%20interested%20in%20DDU-GKY%20Free%20Training%20at%20Amma%20Education.%20Please%20guide%20me." target="_blank" class="btn-quick-whatsapp">
+              <span>💬</span> WhatsApp K.V.N Manikanta
+            </a>
+            <a href="mailto:aes.guntupalli@gmail.com" class="btn-quick-email">
+            <a href="mailto:ammaeducationvij@gmail.com" class="btn-quick-email">
+
+              <span>✉️</span> Email Center
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed Card -->
+        <div class="map-card">
+          <div class="map-card-header">
+            <h4>Google Maps Location: Guntupalli Center</h4>
+            <a href="https://www.google.com/maps/place/DDU+GKY/@16.5640151,80.5463387,17z/data=!4m10!1m2!2m1!1sDDU+GKY!3m6!1s0x3a35ef5998985f09:0x4e1d7bd5bdae2d91!8m2!3d16.5640151!4d80.5511023" target="_blank" class="btn-directions">
+              <span>🗺️ Get Directions</span>
+            </a>
+          </div>
+          <div class="map-frame-holder">
+            <!-- Embedded Google Map centered on 16.5640151, 80.5511023 -->
+            <iframe 
+              src="https://maps.google.com/maps?q=16.5640151,80.5511023&hl=en&z=16&output=embed"
+              title="Amma Education DDU GKY Guntupalli Map Location"
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div style="padding: 1rem 1.5rem; background: #ffffff; font-size: 0.82rem; color: #64748b; display: flex; justify-content: space-between; align-items: center;">
+            <span>Coordinates: 16.5640151, 80.5511023</span>
+            <a href="https://www.google.com/maps/place/DDU+GKY/@16.5640151,80.5463387,17z/data=!4m10!1m2!2m1!1sDDU+GKY!3m6!1s0x3a35ef5998985f09:0x4e1d7bd5bdae2d91!8m2!3d16.5640151!4d80.5511023" target="_blank" style="color: #005691; font-weight: 700;">
+              Open in Google Maps App ➔
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 10: WEBSITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Institute About -->
+        <div class="footer-col-about">
+          <h3>AMMA EDUCATION</h3>
+          <p>
+            An authorized <strong>DDU-GKY Skill Development Training Center</strong> committed to empowering rural youth with modern computer education, fluent communication skills, and sustainable placement assistance.
+          </p>
+          <div style="display: flex; gap: 0.75rem; align-items: center;">
+            <img src="assets/images/ddu-gky-logo.png" alt="DDU-GKY" style="height: 38px; background:#fff; padding: 2px 4px; border-radius: 4px;">
+            <img src="assets/images/govt-logo.png" alt="Govt Emblem" style="height: 38px; background:#fff; padding: 2px 4px; border-radius: 4px;">
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Our Courses</a></li>
+            <li><a href="#facilities">Free Facilities</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#placement">Placement Assistance</a></li>
+            <li><a href="#registration">Student Registration</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Key Offerings -->
+        <div class="footer-col">
+          <h4>Free Facilities</h4>
+          <ul class="footer-links">
+            <li><a href="#facilities">100% Free Training</a></li>
+            <li><a href="#facilities">Free Dining &amp; Food</a></li>
+            <li><a href="#facilities">Free Hostel Accommodation</a></li>
+            <li><a href="#facilities">Free Uniform &amp; Shoes</a></li>
+            <li><a href="#facilities">Free Study Material &amp; Books</a></li>
+            <li><a href="#facilities">Free Student Bag &amp; Cap</a></li>
+            <li><a href="#certification">Government Certificate</a></li>
+            <li><a href="#placement">Job Placement Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Center -->
+        <div class="footer-col">
+          <h4>Contact Information</h4>
+          <div class="footer-contact-item">
+            <span>👤</span>
+            <div>
+              <div style="font-weight: 700; color: #fff;">K.V.N Manikanta (Center In-Charge)</div>
+              <div style="font-size: 0.8rem; color: #94a3b8;">Amma Education</div>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span>📞</span>
+            <a href="tel:9059930295">+91 9059930295</a>
+          </div>
+          <div class="footer-contact-item">
+            <span>✉️</span>
+            <a href="mailto:aes.guntupalli@gmail.com">aes.guntupalli@gmail.com</a>
+            <a href="mailto:ammaeducationvij@gmail.com">ammaeducationvij@gmail.com</a>
+
+          </div>
+          <div class="footer-contact-item">
+            <span>📍</span>
+            <span>Guntupalli, Near Vijayawada, NTR District, Andhra Pradesh - 521241</span>
+          </div>
+          <div style="margin-top: 1rem;">
+            <a href="https://www.google.com/maps/place/DDU+GKY/@16.5640151,80.5463387,17z/data=!4m10!1m2!2m1!1sDDU+GKY!3m6!1s0x3a35ef5998985f09:0x4e1d7bd5bdae2d91!8m2!3d16.5640151!4d80.5511023" target="_blank" style="color: #f97316; font-size: 0.82rem; font-weight: 700;">
+              View on Google Maps ➔
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 Amma Education. All Rights Reserved.
+<div>
+Website Designed & Developed by RK Developers © 2026. All Rights Reserved.</div>
+        </div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="admin.html" style="color: #cbd5e1; font-weight: 600;">Admin Login</a>
+          <span>•</span>
+          <a href="javascript:void(0)" onclick="openStatusModal()" style="color: #cbd5e1;">Track Application</a>
+          <span>•</span>
+          <a href="#home" style="color: #cbd5e1;">Back to Top ↑</a>
+        </div>
+      </div>
+      
+      <div class="footer-disclaimer">
+        Disclaimer: Amma Education operates vocational skill development courses under the approved guidelines of Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY), Ministry of Rural Development, Government of India. Course completion certificates are awarded to candidates fulfilling assessment and attendance eligibility requirements. Placement assistance is provided to empower students towards sustainable livelihood opportunities.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS: ACKNOWLEDGMENT SLIP, STATUS TRACKER, COURSE DETAILS
+       ========================================================================== -->
+
+  <!-- 1. Registration Acknowledgment Slip Modal -->
+  <div class="modal-overlay" id="acknowledgmentModal">
+    <div class="modal-content-card">
+      <button type="button" class="modal-close-btn" onclick="closeModal('acknowledgmentModal')" aria-label="Close modal">✕</button>
+      <div id="slipModalBody">
+        <!-- Injected dynamically by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Application Status Tracker Modal -->
+  <div class="modal-overlay" id="statusModal">
+    <div class="modal-content-card" style="max-width: 580px;">
+      <button type="button" class="modal-close-btn" onclick="closeModal('statusModal')" aria-label="Close modal">✕</button>
+      <div style="padding: 2rem;">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+          <span style="font-size: 2.2rem;">🔍</span>
+          <h3 style="font-size: 1.45rem; color: #002B49; margin-top: 0.25rem;">Track Application Status</h3>
+          <p style="font-size: 0.85rem; color: #64748b;">Enter your 10-digit registered mobile number or Application Reference ID (e.g. AMMA-2026-XXXXX)</p>
+        </div>
+
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+          <input type="text" id="statusSearchInput" class="form-input" placeholder="Mobile Number or Ref ID..." onkeydown="if(event.key==='Enter') trackApplication()">
+          <button type="button" class="btn-submit-reg" style="padding: 0.75rem 1.4rem; font-size: 0.9rem;" onclick="trackApplication()">
+            Track
+          </button>
+        </div>
+
+        <div id="statusSearchResult">
+          <!-- Status result rendered here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Course Details Modal -->
+  <div class="modal-overlay" id="courseDetailsModal">
+    <div class="modal-content-card" style="max-width: 680px;">
+      <button type="button" class="modal-close-btn" onclick="closeModal('courseDetailsModal')" aria-label="Close modal">✕</button>
+      <div id="courseModalBody">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FLOATING ACTIONS: WHATSAPP QUICK CHAT & BACK TO TOP
+       ========================================================================== -->
+  <div class="floating-actions-container">
+    <a href="https://wa.me/919059930295?text=Hello%20 K.V.N Manikanta%20Sir,%20I%20am%20interested%20in%20DDU-GKY%20Free%20Training%20at%20Amma%20Education.%20Please%20guide%20me." target="_blank" class="float-whatsapp-btn" title="Chat with K.V.N Manikanta on WhatsApp">
+      💬
+    </a>
+    <button type="button" class="float-top-btn" title="Back to Top">
+      ↑
+    </button>
+  </div>
+
+  <!-- Toast Notification Element -->
+  <div class="toast-msg" id="toastNotification">
+    Notification message
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

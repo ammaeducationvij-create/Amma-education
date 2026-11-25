@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | AMMA EDUCATION (DDU-GKY)</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/ddu-gky-logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- ==========================================================================
+       ADMIN HEADER
+       ========================================================================== -->
+  <header class="admin-header">
+    <div class="admin-brand">
+      <img src="assets/images/ddu-gky-logo.png" alt="DDU-GKY" class="admin-logo-img">
+      <div class="admin-title-wrap">
+        <h2>AMMA EDUCATION</h2>
+        <span>Center Administration Portal • DDU-GKY</span>
+      </div>
+    </div>
+
+    <div class="admin-user-nav">
+      <a href="index.html" class="topbar-btn" style="background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3);">
+        <span>🌐</span> View Public Website
+      </a>
+      <div class="admin-user-info" id="adminUserBadge">
+        <strong>Manikanta</strong>
+        <span>Center In-Charge (Guntupalli)</span>
+      </div>
+      <button type="button" class="btn-admin-logout" id="btnAdminLogout">
+        <span>🔒</span> Logout
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       VIEW 1: ADMIN LOGIN SCREEN (If not authenticated)
+       ========================================================================== -->
+  <div id="adminLoginView" class="admin-login-wrapper">
+    <div class="admin-login-icon">
+      🔐
+    </div>
+    <h2>Admin Portal Login</h2>
+    <p>Please enter authorized credentials to access student applications and center management.</p>
+
+    <form id="adminLoginForm">
+      <div class="form-group" style="text-align: left; margin-bottom: 1rem;">
+        <label class="form-label" for="adminUser">Username / Center In-Charge ID</label>
+        <input type="text" id="adminUser" class="form-input" placeholder="e.g. manikanta or admin" value="manikanta" required>
+      </div>
+
+      <div class="form-group" style="text-align: left; margin-bottom: 1.5rem;">
+        <label class="form-label" for="adminPin">Admin Security PIN / Password</label>
+        <input type="password" id="adminPin" class="form-input" placeholder="Enter PIN / Mobile" value="7396538004" required>
+      </div>
+
+      <button type="submit" class="btn-submit-reg" style="width: 100%; justify-content: center; padding: 0.85rem;">
+        <span>Login to Dashboard</span>
+        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </button>
+
+      <div class="admin-credential-tip">
+        <strong>Official Center Access Credentials:</strong><br>
+        Username: <code>manikanta</code> | PIN: <code>7396538004</code><br>
+        (Or fallback: <code>admin</code> / <code>admin123</code>)
+      </div>
+    </form>
+  </div>
+
+  <!-- ==========================================================================
+       VIEW 2: MAIN DASHBOARD VIEW (When authenticated)
+       ========================================================================== -->
+  <main id="adminMainDashboard" class="admin-container" style="display: none;">
+    
+    <!-- Welcome Header & Quick Actions -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        <h2 style="font-size: 1.6rem; color: #002B49; margin-bottom: 2px;">Student Admissions Dashboard</h2>
+        <p style="color: #64748b; font-size: 0.88rem;">Real-time overview of student registrations for Amma Education DDU-GKY Center (Guntupalli).</p>
+      </div>
+      <div style="display: flex; gap: 0.75rem;">
+        <button type="button" class="btn-submit-reg" style="font-size: 0.85rem; padding: 0.6rem 1.25rem;" onclick="openWalkinModal()">
+          <span>+ Add Walk-in Student</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Analytics Metrics Cards -->
+    <div class="stats-cards-grid">
+      <!-- Total Registrations -->
+      <div class="metric-card total">
+        <div class="metric-info">
+          <h5>Total Applications</h5>
+          <div class="metric-value" id="statTotalRegistrations">0</div>
+        </div>
+        <div class="metric-icon-box">📋</div>
+      </div>
+
+      <!-- Pending Verification -->
+      <div class="metric-card pending">
+        <div class="metric-info">
+          <h5>Pending Verification</h5>
+          <div class="metric-value" id="statPendingVerification">0</div>
+        </div>
+        <div class="metric-icon-box">⏳</div>
+      </div>
+
+      <!-- Approved & Enrolled -->
+      <div class="metric-card approved">
+        <div class="metric-info">
+          <h5>Approved / Enrolled</h5>
+          <div class="metric-value" id="statApprovedEnrolled">0</div>
+        </div>
+        <div class="metric-icon-box">✅</div>
+      </div>
+
+      <!-- Hostel Accommodation Needed -->
+      <div class="metric-card hostel">
+        <div class="metric-info">
+          <h5>Hostel Requests</h5>
+          <div class="metric-value" id="statHostelRequests">0</div>
+        </div>
+        <div class="metric-icon-box">🏢</div>
+      </div>
+
+      <!-- Free Food Needed -->
+      <div class="metric-card food">
+        <div class="metric-info">
+          <h5>Food Facility</h5>
+          <div class="metric-value" id="statFoodRequests">0</div>
+        </div>
+        <div class="metric-icon-box">🍲</div>
+      </div>
+    </div>
+
+    <!-- Search, Filter & Export Toolbar -->
+    <div class="admin-toolbar">
+      <div class="toolbar-filters">
+        <!-- Search Field -->
+        <div class="admin-search-box">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input type="text" id="adminTableSearch" placeholder="Search by Student Name, ID, Mobile, District...">
+        </div>
+
+        <!-- Course Filter -->
+        <select id="adminCourseFilter" class="admin-select">
+          <option value="all">All Training Courses</option>
+          <option value="Communication Skills Training">Communication Skills</option>
+          <option value="Soft Skills Training">Soft Skills Training</option>
+          <option value="Computer Knowledge and MS Office Training">Computer Knowledge &amp; MS Office</option>
+          <option value="IT Training">IT Training (Hardware &amp; Technical)</option>
+        </select>
+
+        <!-- Status Filter -->
+        <select id="adminStatusFilter" class="admin-select">
+          <option value="all">All Statuses</option>
+          <option value="Pending Verification">Pending Verification</option>
+          <option value="In-Review">In-Review</option>
+          <option value="Approved">Approved</option>
+          <option value="Enrolled">Enrolled</option>
+          <option value="Rejected">Rejected</option>
+        </select>
+
+        <!-- Hostel Filter -->
+        <select id="adminHostelFilter" class="admin-select">
+          <option value="all">All Hostel Types</option>
+          <option value="Yes">Hostel Required (Yes)</option>
+          <option value="No">Day Scholar (No)</option>
+        </select>
+      </div>
+
+      <div class="toolbar-actions">
+        <button type="button" class="btn-admin-export" id="btnExportCSV" title="Download Registration Details in CSV format">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Export to CSV
+        </button>
+
+        <button type="button" class="btn-admin-refresh" id="btnRefreshData" title="Refresh Table">
+          🔄 Refresh
+        </button>
+      </div>
+    </div>
+
+    <!-- Data Table Card -->
+    <div class="admin-table-card">
+      <div class="table-header-row">
+        <h3>Enrolled Candidates &amp; Applicants</h3>
+        <span class="table-count-badge" id="tableCountBadge">Loading...</span>
+      </div>
+
+      <div class="admin-table-responsive">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Ref ID</th>
+              <th>Student &amp; Parent</th>
+              <th>Contact Info</th>
+              <th>Selected Course</th>
+              <th>District / Village</th>
+              <th>Facilities</th>
+              <th>Application Status</th>
+              <th style="text-align: right;">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="adminTableBody">
+            <!-- Rendered dynamically by admin.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       ADMIN MODALS
+       ========================================================================== -->
+
+  <!-- 1. Full Details Modal -->
+  <div class="modal-overlay" id="adminDetailModal">
+    <div class="modal-content-card modal-admin-details">
+      <button type="button" class="modal-close-btn" onclick="closeModal('adminDetailModal')">✕</button>
+      <div id="adminDetailBody">
+        <!-- Rendered by admin.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Printable Slip Modal -->
+  <div class="modal-overlay" id="acknowledgmentModal">
+    <div class="modal-content-card">
+      <button type="button" class="modal-close-btn" onclick="closeModal('acknowledgmentModal')">✕</button>
+      <div id="slipModalBody">
+        <!-- Rendered by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Walk-in Student Registration Modal -->
+  <div class="modal-overlay" id="walkinModal">
+    <div class="modal-content-card" style="max-width: 800px;">
+      <button type="button" class="modal-close-btn" onclick="closeModal('walkinModal')">✕</button>
+      <div style="padding: 2rem;">
+        <h3 style="font-size: 1.4rem; color: #002B49; margin-bottom: 0.25rem;">+ Add Walk-In Student (Center Desk)</h3>
+        <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 1.5rem;">Fast-track registration for students visiting Guntupalli center directly.</p>
+
+        <form id="walkinForm">
+          <div class="form-grid-3">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" id="walkinName" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Father's Name *</label>
+              <input type="text" id="walkinFather" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mobile Number *</label>
+              <input type="tel" id="walkinMobile" class="form-input" maxlength="10" required>
+            </div>
+          </div>
+
+          <div class="form-grid-3" style="margin-top: 1rem;">
+            <div class="form-group">
+              <label class="form-label">Gender</label>
+              <select id="walkinGender" class="form-select">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Course</label>
+              <select id="walkinCourse" class="form-select">
+                <option value="Computer Knowledge and MS Office Training">Computer Knowledge &amp; MS Office</option>
+                <option value="Communication Skills Training">Communication Skills</option>
+                <option value="Soft Skills Training">Soft Skills Training</option>
+                <option value="IT Training">IT Training</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">District</label>
+              <input type="text" id="walkinDistrict" class="form-input" value="NTR District">
+            </div>
+          </div>
+
+          <div class="form-grid-2" style="margin-top: 1rem;">
+            <div class="form-group">
+              <label class="form-label">Accommodation Needed?</label>
+              <select id="walkinHostel" class="form-select">
+                <option value="Yes">Yes, Hostel Required</option>
+                <option value="No">No, Day Scholar</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Initial Status</label>
+              <select id="walkinStatus" class="form-select">
+                <option value="Approved">Approved</option>
+                <option value="Enrolled">Enrolled</option>
+                <option value="In-Review">In-Review</option>
+                <option value="Pending Verification">Pending Verification</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem;">
+            <button type="submit" class="btn-submit-reg" style="font-size: 0.9rem; padding: 0.7rem 1.5rem;">
+              Save &amp; Generate Slip
+            </button>
+            <button type="button" class="btn-admin-logout" style="background:#f1f5f9; color:#475569; border:1px solid #cbd5e1;" onclick="closeModal('walkinModal')">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="toastNotification">
+    Notification
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/admin.js"></script>
+  <script>
+    function openWalkinModal() {
+      document.getElementById("walkinModal")?.classList.add("active");
+    }
+
+    document.getElementById("walkinForm")?.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const refNumber = StorageManager.generateReferenceNumber();
+      const newRec = {
+        id: refNumber,
+        fullName: document.getElementById("walkinName").value.trim(),
+        fatherName: document.getElementById("walkinFather").value.trim(),
+        motherName: "Not Specified",
+        dob: "2003-01-01",
+        gender: document.getElementById("walkinGender").value,
+        mobile: document.getElementById("walkinMobile").value.trim(),
+        whatsapp: document.getElementById("walkinMobile").value.trim(),
+        email: "student@ammaeducation.in",
+        address: "Walk-in registration at center desk",
+        village: "Guntupalli",
+        district: document.getElementById("walkinDistrict").value,
+        state: "Andhra Pradesh",
+        pincode: "521241",
+        qualification: "Intermediate",
+        computerKnowledge: "Basic",
+        course: document.getElementById("walkinCourse").value,
+        experience: "Fresher",
+        accommodation: document.getElementById("walkinHostel").value,
+        food: "Yes",
+        registeredAt: new Date().toISOString(),
+        status: document.getElementById("walkinStatus").value,
+        remarks: "Enrolled in person at center by Manikanta."
+      };
+
+      StorageManager.save(newRec);
+      AdminDashboard.refresh();
+      closeModal('walkinModal');
+      document.getElementById("walkinForm").reset();
+      showToast(`Student ${newRec.fullName} registered! Ref: ${refNumber}`, "success");
+      showAcknowledgmentSlip(newRec);
+    });
+  </script>
+</body>
+</html>
